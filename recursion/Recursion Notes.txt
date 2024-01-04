@@ -1,0 +1,40 @@
+- A way of solving a problem by having a function call itself.
+- It is a way of solving a problem where the final solution is dependent on 
+finding the solution of a smaller instance of function.
+
+Properties of Recursion
+- perform the same operation multiple times with different inputs.
+- in every step we try smaller inputs to make the problem smaller.
+- Base condition is needed to stop the recursion, otherwise infinite
+  loop will occur.
+
+Reasons For Recursion
+- Break down big problems to smaller ones and easier to use.
+	we choose recursion when a sub-problem is similar in nature:
+	- if you can divide the problem into similar sub-problems.
+	- Design an algorithm to compute nth...
+	- Write code to list the n...
+	- Implement a method to compute all.
+	- Practice
+	
+- The prominent use of recursion is in data structures like trees and graphs.
+- Interviews.
+- It is used in many algorithms:
+	- divide and conquer.
+	- greedy.
+	- dynamic programming.
+	
+How it Works
+- A method calls itself.
+- Exit from infinite loop.
+
+- we use recursion when we are fine with extra overhead (both time and space).
+- When we need a quick working solution instead of efficient one.
+- when we need to traverse a tree.
+- when we use memorization in recursion.
+
+Three Steps of Recursion:
+S1-> Recursive Case - the flow.
+S2-> Base case - the stopping criterion.
+
+
