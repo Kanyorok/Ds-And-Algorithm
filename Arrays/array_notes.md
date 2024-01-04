@@ -89,7 +89,7 @@ Algorithm
 
 #### Traversal
 
-This operation traverse through all the elements in the array. We use loops to conduct the operation.
+This operation traverse through all the elements in the array. We use loops to conduct the operation. **Time Complexity --> O(n)**. The time is linear because the loop has to pass through all the elements in the data structure.
 
 ```
 Algorithm
