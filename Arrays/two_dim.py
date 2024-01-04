@@ -10,3 +10,21 @@ numbers.insert(6, 87)
        
 
 print(numbers)
+
+print('-_'*30)
+
+'''
+Two Dimensional Arrays BootCamp
+'''
+
+# Create a two dimensional array to display days and scores
+# Day 1 - 11, 15, 10, 6
+# Day 2 - 10, 14, 11, 5
+# Day 3 - 12, 17, 12, 8
+# Day 4 - 15, 18, 14, 9
+
+import numpy as np
+
+twoDimensionalArr = np.array([[11, 15, 10, 6], [10, 14, 11, 5], [12, 17, 12, 8], [15, 18, 14, 9]])
+
+print(twoDimensionalArr)
