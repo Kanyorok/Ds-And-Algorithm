@@ -41,7 +41,8 @@ Array Representation
 
 #### Insertion
 
-It is an operation that involves adding one or more elements into an array. This is done based on the specified requirements, which means adding data at beginning, end, or any given index of array. 
+It is an operation that involves adding one or more elements into an array. This is done based on the specified requirements, which means adding data at beginning, end, or any given index of array. **Time Complexity --> O(n)**
+The time complexity is linear because there is need to shift index of elements after the values are inserted.
 
 ```
 Algorithm
