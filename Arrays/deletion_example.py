@@ -3,7 +3,7 @@
 '''
 # Delete the record 89 at index 4 in the array below.
 # array marks = [90, 56, 89, 70, 66, 54]
-print("My Insertion Example")
+print("My Deletion Example")
 import array as arr
 
 marks = arr.array('i', [90, 56, 89, 70, 66, 54])
@@ -25,11 +25,11 @@ print('marks after deletion', del_arr)
 print('-'* 50)
 
 '''
-TutorialsPoint Insertion Example
+TutorialsPoint Deletion Example
 '''
 
 # Python program to insert an element using insertion operation
-print("TutorialsPoint Insertion Example")
+print("TutorialsPoint Deletion Example")
 
 if __name__ == '__main__':
     # Declaring array and deleting the value
@@ -49,3 +49,19 @@ if __name__ == '__main__':
     print("Array after deletion of last element: ")
     for x in range(n):
         print("LA", [x], " = ", LA[x])
+'''
+BootCamp Deletion Example
+'''
+
+# Python program to insert an element using insertion operation
+print("BootCamp Deletion Example")
+
+import array as arr
+
+arr1 = arr.array('i', [1,2,3,4,5,6])
+
+value = 6
+print('array befor the removal of value', arr1)
+arr1.remove(value)
+
+print(f'the value {value} was removed, {arr1}')

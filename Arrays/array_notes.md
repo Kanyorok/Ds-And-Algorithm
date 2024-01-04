@@ -1,4 +1,4 @@
-## Arrays Data Structure
+# Arrays Data Structure
 
 ### Description
 
@@ -125,3 +125,8 @@ Algorithm
 2. Print all the elements in the Array
 3. Stop
 ```
+
+## Time and Space Complexity in One Dimensional Arrays
+
+![](./Time&SpaceComplexity.png)
+
