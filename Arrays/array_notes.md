@@ -73,7 +73,7 @@ Algorithm
 ```
 #### Search 
 
-Searching is done using a key. The key elements sequentially compares every value in the array to check if it is present.
+Searching is done using a key. The key elements sequentially compares every value in the array to check if it is present. **Time Complexity --> O(n)**
 
 ```
 Algorithm
