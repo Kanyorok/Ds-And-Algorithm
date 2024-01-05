@@ -2,31 +2,31 @@
 
 ### Description
 
-It is a type of linear data structure that is defined as a collection of elements with the same or different data types. 
+It is a type of linear data structure that is defined as a collection of elements with the same or different data types.
 
-They exist in both single and multiple dimensions. 
+They exist in both single and multiple dimensions.
 
-It is a crucial data structure when there is need to store multiple elements of the same nature together at one place. 
+It is a crucial data structure when there is need to store multiple elements of the same nature together at one place.
 
 ```
 Array Data Structure Preview
 ```
 ![](./arrays1.jpg)
 
-The difference between array index and a memory address is that array index acts like a key value to label elements in the array. 
+The difference between array index and a memory address is that array index acts like a key value to label elements in the array.
 
-A memory address is the starting address of the free memory available. 
+A memory address is the starting address of the free memory available.
 
 ### Need for Arrays
 
-Arrays offer O(1) random access time. This aspect means that accessing the 1st index or 1000th index will both take the same time. 
+Arrays offer O(1) random access time. This aspect means that accessing the 1st index or 1000th index will both take the same time.
 
 ```
 Array Representation
 
 - index starts at 0.
 - Array length is 9 meaning it can store 9 elements.
-- Each element can be accessed via its index. 
+- Each element can be accessed via its index.
 ```
 ![](./array_representation.jpg)
 
@@ -36,8 +36,8 @@ Array Representation
 - **Insertion** - add an element at a given index.
 - **Deletion** - Deletes an element at a given index.
 - **Search** - Searches an element using the given index or by the value.
-- **Update** - Updates an element at given index. 
-- **Display** - Displays the contents of the array. 
+- **Update** - Updates an element at given index.
+- **Display** - Displays the contents of the array.
 
 #### Insertion
 
@@ -53,10 +53,10 @@ Algorithm
 4. Enter the element at the ith index of the array.
 5. Increment I by 1.
 6. Repeat the steps 4 & 5 until the end of the array.
-7. Stop. 
+7. Stop.
 ```
 
-#### Deletion 
+#### Deletion
 
 We delete an element from a particular index of an array. The operation takes place as we assign a value in consequent index to current index.
 
@@ -71,7 +71,7 @@ Algorithm
 6. Set N = N - 1
 7. Stop
 ```
-#### Search 
+#### Search
 
 Searching is done using a key. The key elements sequentially compares every value in the array to check if it is present. **Time Complexity --> O(n)**. The worst case is that the loop will have to go through all the elements.
 
@@ -114,7 +114,7 @@ Algorithm
 3. Stop
 ```
 
-#### Display 
+#### Display
 
 This operation displays all the elements in the entire array using print statement.
 
@@ -130,3 +130,24 @@ Algorithm
 
 ![](./Time&SpaceComplexity.png)
 
+# Two Dimensional arrays
+
+The two dimensional array is especially important when there is need to create a matrix
+
+It is created using the numpy library instead of the array library.
+
+## Time and Space Complexity in Two Dimensional Arrays
+
+![](./TwoDTime&SpaceComplexity.png)
+
+# When To Use/Avoid Arrays
+
+## When To Use
+
+- To store multiple variables of the same data type
+- Random access of data
+
+## When To Avoid
+
+- Same data type elements.
+- Reserve memory that we are not sure.
