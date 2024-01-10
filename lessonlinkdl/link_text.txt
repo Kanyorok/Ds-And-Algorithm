@@ -1,0 +1,72 @@
+# Create the node
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+
+class linkList:
+    def __init__(self):
+        self.head = None
+        self.size = 0
+    
+    def insertFirst(self, newData):
+        infoData = Node(newData)
+        infoData.next = self.head
+        self.head = infoData
+        self.size += 1
+
+    def insertEnd(self, newEndData):
+        if self.head is None:
+            self.insertFirst(newEndData)
+            return
+
+        self.size += 1
+
+        newNode = Node(newEndData)
+        actualNode = self.head
+
+        while actualNode.next is not None:
+            actualNode = actualNode.next
+        
+        actualNode.next = newNode
+
+    def insertAtIndex(self, index, newIdData):
+        if index < 0 or index > self.size:
+            raise IndexError(f'{index} is out of bounds')
+
+        if index == 0:
+            self.insertFirst(newIdData)
+            return
+        
+        self.size += 1
+
+        newNodeId = Node(newIdData)
+        prevNode = None
+        actualNode = self.head
+        counter = 0
+
+        while counter < index:
+            prevNode = actualNode
+            actualNode = actualNode.next
+            counter += 1
+        prevNode.next = newNodeId
+        newNodeId.next = actualNode         
+
+    def printData(self):
+        printValues = self.head
+        print("Stored Values in Linked List: ")
+        while printValues is not None:
+            print(printValues.data)
+            printValues = printValues.next
+        print(f'The size of the Linked list is: {self.size}')
+
+accessData = linkList()
+accessData.insertFirst("4")
+accessData.insertFirst("5")
+accessData.insertFirst("6")
+accessData.insertEnd("1")
+accessData.insertEnd("2")
+accessData.insertEnd("3")
+accessData.insertAtIndex(3, "7")
+
+accessData.printData()
